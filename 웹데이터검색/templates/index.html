@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Search Keyword</title>
+  </head>
+  <body>
+    <form method="post">
+      <input type="text" name="keyword">
+      <input type="submit" value="Search">
+    </form>
+    {% for table in tables %}
+      {{ table|safe }}
+    {% endfor %}
+  </body>
+</html>
